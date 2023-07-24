@@ -1,0 +1,89 @@
+.home-card-sec {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 80px 0;
+}
+
+.home-card-cont {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 25px;
+  overflow-y: hidden;
+  /* animation: 1s ease-in 1s both running fadeInDown; */
+}
+
+.card-part {
+  width: 345px;
+  height: 400px;
+  /* opacity: 0.8; */
+  /* background: rgba(0, 0, 0, 0.603); */
+  position: relative;
+}
+
+.hero-card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-heading {
+  font-size: 24px;
+  color: var(--color-brand-yellow);
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* font-family: sans-serif; */
+}
+
+.card-desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 10px;
+  /* font-family: sans-serif; */
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.603);
+  position: absolute;
+  padding-left: 20px;
+  /* padding-bottom: 20px; */
+  padding-top: 190px;
+  bottom: 0;
+  height: 100%;
+}
+
+.btn-card {
+  color: var(--color-brand-red);
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  /* font-family: sans-serif; */
+  cursor: pointer;
+}
+
+.btn-card:hover {
+  color: var(--color-brand-yellow);
+}
+
+/* media query */
+
+@media screen and (max-width: 1050px) {
+  .home-card-cont {
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: scroll;
+  }
+
+  .card-part {
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+  .card-content {
+    padding-top: 64%;
+  }
+}

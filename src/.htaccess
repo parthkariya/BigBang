@@ -1,0 +1,11 @@
+RewriteEngine On 
+
+RewriteCond %{SERVER_PORT} 80 
+
+RewriteRule ^(.*)$ https://theapplified.com/bb/$1 [R,L]
+
+Options -MultiViews
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^ index.html [QSA,L]

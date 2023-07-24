@@ -1,0 +1,168 @@
+.sec-ridescard {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.con-ridescard {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  column-gap: 15px;
+  justify-content: center;
+}
+
+.ridescard-heading-sec {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.ridescard-heading {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color-brand-red);
+  font-weight: 600;
+  text-align: center;
+}
+
+.ridescard-subheading {
+  font-size: 32px;
+  color: var(--color-brand-yellow);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ridescard-part {
+  width: 300px;
+  max-height: 440px;
+  position: relative;
+}
+
+.ridescard-img-box {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.ridescard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 3s ease;
+}
+
+.ridescard-img:hover {
+  transform: scale(1.5);
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+.ridescard-detail {
+  background-color: var(--color-brand-red);
+}
+
+.ridescard-name {
+  color: var(--color-brand-yellow);
+  font: size 14px;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  text-align: center;
+}
+
+.ridescard-ticket-qnt {
+  display: flex;
+  gap: 20px;
+  /* align-items: center; */
+}
+
+.ridescard-qnt {
+  color: var(--color-brand-yellow);
+  font-size: 14px;
+}
+
+.btn-ridescard-dec {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.qnt-icon {
+  color: var(--color-white);
+}
+
+.ridescard-tic-qnt-heading {
+  color: var(--color-white);
+}
+
+.ridescard-desc {
+  color: var(--color-white);
+  font-size: 14px;
+  position: relative;
+}
+
+.ridescard-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.ridescard-padding-extra {
+  padding-bottom: 55px;
+}
+
+.ridescard-capacity-box {
+  /* background-color: var(--color-white); */
+  border: 1px solid var(--color-white);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ridescard-capacity {
+  font-weight: 500;
+  color: var(--color-white);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.btn-ridescard-book {
+  width: 120px;
+  height: 50px;
+  font-weight: 600;
+  background-color: var(--color-brand-yellow);
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  color: var(--color-brand-red);
+}
+
+.btn-buy-now-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* media query */
+@media (max-width: 930px) {
+  .con-ridescard {
+    display: flex;
+    gap: 15px;
+    column-gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-left: 15px;
+  }
+}

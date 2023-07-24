@@ -1,0 +1,41 @@
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.img-wrap {
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    /* padding controls height, will always be perfectly square regardless of width */
+    position: relative;
+    /* opacity: 0.8; */
+}
+
+.img-wrap img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width:1140px) {
+    .img-grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .img-grid {
+        grid-gap: 10 px;
+        max-width: 80%;
+    }
+}
